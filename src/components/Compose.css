@@ -1,0 +1,110 @@
+.compose {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.compose-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.compose-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.compose-note {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+}
+
+.compose-textarea {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.72;
+  resize: vertical;
+  min-height: 100px;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+}
+
+.compose-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.compose-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  padding: 3px 9px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.compose-tag:hover { border-color: var(--accent-dim); color: var(--text-muted); }
+
+.compose-tag.selected {
+  border-color: var(--accent-dim);
+  background: rgba(201,169,110,0.08);
+  color: var(--accent);
+}
+
+.compose-error {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--danger);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(201,110,110,0.05);
+  border: 1px solid rgba(201,110,110,0.2);
+  border-radius: 3px;
+}
+
+.compose-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compose-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.compose-count {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-dim);
+}
+
+.compose-count--warn { color: var(--danger); }
+
+.compose-hint {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.compose-actions {
+  display: flex;
+  gap: 0.5rem;
+}
